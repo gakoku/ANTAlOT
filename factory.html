@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>ANT A lOT</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    	<script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    	<script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    	<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    	<script src="node_modules/systemjs/dist/system.src.js"></script>
+    	<script src="node_modules/rxjs/bundles/Rx.js"></script>
+  		<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    	<script>
+      		System.config({
+        		packages: {
+          			app: {
+            			format: 'register',
+            			defaultExtension: 'js'
+          			}
+        		}
+      		});
+      		System.import('app/main')
+            	.then(null, console.error.bind(console));
+    	</script>
+    	<link rel="stylesheet" type="text/css" href="style/uikit/css/uikit.min.css">
+	    <link rel="stylesheet" type="text/css" href="style/css/style.css">
+    	<script src="style/uikit/js/uikit.min.js"></script>	
+    </head>
+	<body>
+		<div>
+			<div id="header">
+					<table id="comhead">
+						<td align='center' style='width:25%;'>
+							<div id="factorylogo">
+								<img class="uk-margin-bottom" width="60%" height="60%" src="images/factory.gif" alt="FACLOGO">
+							</div>
+						</td>
+						<td style='width:50%;'>
+							<div>
+								
+							</div>
+						</td>
+						<td style='width:25%;'>
+							<div id="userprofile" >
+								<div align='center'>
+									<pre>Welcome, NAME <a href="#">logout</a></pre>
+								</div>
+							</div>
+						</td>
+					</table>
+			</div>
+			<div id="dashboard">
+				<table class="uk-table">
+					<tr>
+						<td class='uk-width-9-10'></td>
+						<td class='uk-width-1-10'>
+							<button id='AddBtn' class="uk-button uk-button-large uk-button-primary " data-uk-modal="{target:'#AddBox'}" type="button">
+								ADD
+							</button>
+						</td>
+					</tr>
+				</table>
+				<table id='card' class="uk-table" style='border: 1px solid;'>
+					<tr>
+						<td class='uk-width-8-10 uk-text-middle'>
+							<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
+									Factory 1
+							</p>
+						</td>
+						<td class='uk-width-2-10 uk-text-middle uk-text-center'>
+							<div class="uk-button-group">
+    							<a class="uk-button uk-button-large" href="#">
+    								EDIT
+    							</a>
+    							<button class="uk-button uk-button-large">DELETE</button>
+    						</div>
+						</td>
+					</tr>
+				</table>
+				<div id="AddBox" class="uk-modal" aria-hidden="true" style="display: none; overflow-y: auto;">
+					<div class="uk-modal-dialog">
+						<a class="uk-modal-close uk-close"></a>
+						<h1>Test</h1>
+						<p>Test Dialog</p>
+					</div>
+				</div>
+			</body>
+</html>
