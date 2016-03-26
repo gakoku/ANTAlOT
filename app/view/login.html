@@ -3,15 +3,18 @@
         <img class="uk-margin-bottom" width="140" height="120" src="" alt="LOGO">
             <form class="uk-panel uk-panel-box uk-form">
                 <div class="uk-form-row">
-                   <input class="uk-width-1-1 uk-form-large" type="text" placeholder="Username">
+                   <input class="uk-width-1-1 uk-form-large" type="text" placeholder="Username" value="{{username}}">
                 </div>
                     <div class="uk-form-row">
                     	<div class="uk-form-password">
-                        	<input class="uk-width-1-1 uk-form-large" type="password" placeholder="Password">
+                        	<input class="uk-width-1-1 uk-form-large" type="password" placeholder="Password" value="{{password}}">
                         </div>
                     </div>
                     <div class="uk-form-row">
-                        <a class="uk-width-1-1 uk-button uk-button-primary uk-button-large" href="#">Login</a>
+                        <button class="uk-width-1-1 uk-button uk-button-primary uk-button-large" href="#" (click)="chkUser()">Login</button>
+                    </div>
+                    <div class="uk-form-row">
+                        <h3>{{alertMess}}</h3>
                     </div>
                     <!--
                     <div class="uk-form-row uk-text-small">

@@ -4,4 +4,10 @@ import {Component} from 'angular2/core';
     selector: 'index',
     templateUrl: 'app/view/login.html'
 })
-export class AppComponent { }
+
+export class AppComponent { 
+	alertMess = '';
+	username = 'admin';
+	password = '';
+	
+}

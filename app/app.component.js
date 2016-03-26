@@ -20,7 +20,16 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.alertMess = '';
+                    this.username = 'admin';
+                    this.password = '';
                 }
+                AppComponent.prototype.chkUser = function () {
+                    if (username === 'admin') {
+                        this.alertMess = 'Valid';
+                    }
+                };
+                ;
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'index',
