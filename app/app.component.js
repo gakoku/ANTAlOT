@@ -21,19 +21,24 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.alertMess = '';
-                    this.username = 'admin';
-                    this.password = '';
                 }
                 AppComponent.prototype.chkUser = function () {
-                    if (username === 'admin') {
-                        this.alertMess = 'Valid';
+                    if (this.username == 'admin') {
+                        if (this.password == 'admin') {
+                            this.alertMess = '';
+                        }
+                        else {
+                            this.alertMess = 'Username or Password Invalid';
+                        }
+                    }
+                    else {
+                        this.alertMess = 'Username or Password INVALID';
                     }
                 };
-                ;
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'index',
-                        templateUrl: 'app/view/login.html'
+                        templateUrl: 'view/login.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
