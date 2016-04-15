@@ -2,5 +2,5 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'factory',
-    templateUrl: ''
+    templateUrl: 'view/factory.html'
 })

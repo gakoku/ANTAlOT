@@ -3,19 +3,24 @@
         <img class="uk-margin-bottom" width="140" height="120" src="" alt="LOGO">
             <form class="uk-panel uk-panel-box uk-form">
                 <div class="uk-form-row">
-                   <input [(ngModel)]="username" class="uk-width-1-1 uk-form-large" type="text" placeholder="Username">
+                   <input [(ngModel)]="username" ngControl="user" class="uk-width-1-1 uk-form-large" type="text" placeholder="Username">
                 </div>
-                    <div class="uk-form-row">
-                    	<div class="uk-form-password">
-                        	<input [(ngModel)]="password" class="uk-width-1-1 uk-form-large" type="password" placeholder="Password">
-                        </div>
+                <div class="uk-form-row uk-button-danger">
+                   {{alertUser}}
+                </div>
+                <div class="uk-form-row">
+                	<div class="uk-form-password">
+                    	<input [(ngModel)]="password" class="uk-width-1-1 uk-form-large" type="password" placeholder="Password">
                     </div>
-                    <div class="uk-form-row">
-                        <button class="uk-width-1-1 uk-button uk-button-primary uk-button-large" (click)="chkUser()">Login</button>
-                    </div>
-                    <div class="uk-form-row">
-                        <h3 class="alert">{{alertMess}}</h3>
-                    </div>
+                </div>
+                <div class="uk-form-row uk-button-danger">
+                   {{alertPass}}
+                </div>
+                <div class="uk-form-row">                        <button class="uk-width-1-1 uk-button uk-button-primary uk-button-large" (click)="chkUser()">Login</button>
+                </div>
+                <div class="uk-form-row">
+                    <h3 class="alert">{{alertMess}}</h3>
+                </div>
             </form>
     </div>
 </div>

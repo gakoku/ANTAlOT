@@ -21,6 +21,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.alertMess = '';
+                    this.alertUser = '';
+                    this.alertPass = '';
+                    this.username = '';
+                    this.password = '';
                 }
                 AppComponent.prototype.chkUser = function () {
                     if (this.username == 'admin') {
@@ -28,11 +32,21 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             this.alertMess = '';
                         }
                         else {
-                            this.alertMess = 'Username or Password Invalid';
+                            if (this.password = '') {
+                                this.alertPass = 'Password is required';
+                            }
+                            else {
+                                this.alertMess = 'Username or Password INVALID';
+                            }
                         }
                     }
                     else {
-                        this.alertMess = 'Username or Password INVALID';
+                        if (this.username = '') {
+                            this.alertUser = 'Username is required';
+                        }
+                        else {
+                            this.alertMess = 'Username or Password INVALID';
+                        }
                     }
                 };
                 AppComponent = __decorate([

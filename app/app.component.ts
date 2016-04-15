@@ -7,17 +7,27 @@ import {Component} from 'angular2/core';
 
 export class AppComponent {
 	alertMess: String = '';
-	username: String;
-	password: String;
+	alertUser: String = '';
+	alertPass: String = '';
+	username: String = '';
+	password: String = '';
 	chkUser(){
 		if(this.username == 'admin'){
 			if(this.password == 'admin'){
 				this.alertMess = '';
 			}else{
-				this.alertMess = 'Username or Password Invalid';
+				if(this.password = ''){
+					this.alertPass = 'Password is required';
+				}else{
+					this.alertMess = 'Username or Password INVALID';
+				}
 			}
 		}else{
-			this.alertMess = 'Username or Password INVALID';
+			if(this.username = ''){
+				this.alertUser = 'Username is required';
+			}else{
+				this.alertMess = 'Username or Password INVALID';
+			}
 		}
 	}
 }
