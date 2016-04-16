@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, router_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -27,33 +30,43 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.password = '';
                 }
                 AppComponent.prototype.chkUser = function () {
-                    if (this.username == 'admin') {
-                        if (this.password == 'admin') {
-                            this.alertMess = '';
+                    if (this.username != '') {
+                        this.alertUser = '';
+                        if (this.password != '') {
+                            this.alertPass = '';
                         }
-                        else {
-                            if (this.password = '') {
-                                this.alertPass = 'Password is required';
+                        if (this.username == 'admin') {
+                            if (this.password == 'admin') {
+                                this.alertMess = '';
                             }
-                            else {
-                                this.alertMess = 'Username or Password INVALID';
-                            }
-                        }
-                    }
-                    else {
-                        if (this.username = '') {
-                            this.alertUser = 'Username is required';
                         }
                         else {
                             this.alertMess = 'Username or Password INVALID';
+                        }
+                    }
+                    else {
+                        this.alertUser = 'Username is required';
+                        if (this.alertPass == '') {
+                            this.alertPass = 'Password is required';
                         }
                     }
                 };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'index',
-                        templateUrl: 'view/login.html'
-                    }), 
+                        templateUrl: 'view/login.html',
+                        directives: [router_1.ROUTER_DIRECTIVES],
+                        providers: [
+                            router_1.ROUTER_PROVIDERS
+                        ]
+                    }),
+                    router_1.RouteConfig([
+                        {
+                            path: '/heroes',
+                            name: 'Heroes',
+                            component: HeroesComponent
+                        }
+                    ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
