@@ -10,14 +10,6 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
   ]
 })
 
-@RouteConfig([
-  {
-    path: '/heroes',
-    name: 'Heroes',
-    component: HeroesComponent
-  }
-])
-
 export class AppComponent {
 	alertMess = '';
 	alertUser = '';

@@ -59,14 +59,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                         providers: [
                             router_1.ROUTER_PROVIDERS
                         ]
-                    }),
-                    router_1.RouteConfig([
-                        {
-                            path: '/heroes',
-                            name: 'Heroes',
-                            component: HeroesComponent
-                        }
-                    ]), 
+                    }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
