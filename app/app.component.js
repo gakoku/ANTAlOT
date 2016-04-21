@@ -55,10 +55,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                     core_1.Component({
                         selector: 'index',
                         templateUrl: 'view/login.html',
-                        directives: [router_1.ROUTER_DIRECTIVES],
-                        providers: [
-                            router_1.ROUTER_PROVIDERS
-                        ]
+                        directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

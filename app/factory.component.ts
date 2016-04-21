@@ -4,3 +4,5 @@ import {Component} from 'angular2/core';
     selector: 'factory',
     templateUrl: 'view/factory.html'
 })
+
+export class factoryComponent{}

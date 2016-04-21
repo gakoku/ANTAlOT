@@ -1,13 +1,11 @@
 import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import {factoryComponent} from './factory.component';
 
 @Component({
     selector: 'index',
     templateUrl: 'view/login.html',
-    directives: [ROUTER_DIRECTIVES],
-  	providers: [
-    ROUTER_PROVIDERS
-  ]
+    directives: [ROUTER_DIRECTIVES]
 })
 
 export class AppComponent {
