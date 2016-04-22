@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './Login/login.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1;
+    var core_1, router_1, login_component_1;
     var AppComponent;
     return {
         setters:[
@@ -19,44 +19,28 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (login_component_1_1) {
+                login_component_1 = login_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.alertMess = '';
-                    this.alertUser = '';
-                    this.alertPass = '';
-                    this.username = '';
-                    this.password = '';
                 }
-                AppComponent.prototype.chkUser = function () {
-                    if (this.username != '') {
-                        this.alertUser = '';
-                        if (this.password != '') {
-                            this.alertPass = '';
-                        }
-                        if (this.username == 'admin') {
-                            if (this.password == 'admin') {
-                                this.alertMess = '';
-                            }
-                        }
-                        else {
-                            this.alertMess = 'Username or Password INVALID';
-                        }
-                    }
-                    else {
-                        this.alertUser = 'Username is required';
-                        if (this.alertPass == '') {
-                            this.alertPass = 'Password is required';
-                        }
-                    }
-                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'index',
-                        templateUrl: 'view/login.html',
+                        templateUrl: 'view/index.html',
                         directives: [router_1.ROUTER_DIRECTIVES]
-                    }), 
+                    }),
+                    router_1.RouteConfig([
+                        {
+                            path: '/Login',
+                            name: 'login',
+                            component: login_component_1.loginComponent,
+                            useAsDefault: true
+                        }
+                    ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;

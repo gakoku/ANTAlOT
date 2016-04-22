@@ -1,37 +1,21 @@
 import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import {factoryComponent} from './factory.component';
+import {factoryComponent} from './Factory/factory.component';
+import {loginComponent} from './Login/login.component';
 
 @Component({
     selector: 'index',
-    templateUrl: 'view/login.html',
+    templateUrl: 'view/index.html',
     directives: [ROUTER_DIRECTIVES]
 })
 
-export class AppComponent {
-	alertMess = '';
-	alertUser = '';
-	alertPass = '';
-	username = '';
-	password = '';
-	chkUser(){
-		if(this.username != ''){
-			this.alertUser = '';
-			if(this.password != ''){
-				this.alertPass = '';
-			}
-			if(this.username == 'admin'){
-				if(this.password == 'admin'){
-					this.alertMess = '';
-				}
-			}else{
-				this.alertMess = 'Username or Password INVALID';
-			}
-		}else{
-			this.alertUser = 'Username is required';
-			if(this.alertPass == ''){
-				this.alertPass = 'Password is required';
-			}
-		}
-	}
-}
+@RouteConfig([
+  {
+    path: '/Login',
+    name: 'login',
+    component: loginComponent,
+    useAsDefault: true
+  }
+])
+
+export class AppComponent {}
