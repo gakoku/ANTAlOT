@@ -1,11 +1,9 @@
 import {Component} from 'angular2/core';
-import { RouteConfig, RouteOutlet } from 'angular2/router';
-import {factoryComponent} from './Factory/factory.component';
+import { Router } from 'angular2/router';
 
 @Component({
     selector: 'login',
-    templateUrl: 'view/login.html',
-    directives: [RouterOutlet]
+    templateUrl: 'view/login.html'
 })
 
 export class loginComponent {

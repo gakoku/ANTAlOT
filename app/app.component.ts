@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import {factoryComponent} from './Factory/factory.component';
 import {loginComponent} from './Login/login.component';
+import {factoryComponent} from '.Factory/factory.component';
 
 @Component({
     selector: 'index',
@@ -15,6 +15,11 @@ import {loginComponent} from './Login/login.component';
     name: 'login',
     component: loginComponent,
     useAsDefault: true
+  },
+  {
+    path: '/Factory',
+    name: 'factory',
+    component: factoryComponent
   }
 ])
 

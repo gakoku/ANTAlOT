@@ -51,8 +51,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 loginComponent = __decorate([
                     core_1.Component({
                         selector: 'login',
-                        templateUrl: 'view/login.html',
-                        directives: [RouterOutlet]
+                        templateUrl: 'view/login.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], loginComponent);
