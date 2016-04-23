@@ -20,34 +20,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             loginComponent = (function () {
                 function loginComponent() {
-                    this.alertMess = '';
-                    this.alertUser = '';
-                    this.alertPass = '';
-                    this.username = '';
-                    this.password = '';
                 }
-                loginComponent.prototype.chkUser = function () {
-                    if (this.username != '') {
-                        this.alertUser = '';
-                        if (this.password != '') {
-                            this.alertPass = '';
-                        }
-                        if (this.username == 'admin') {
-                            if (this.password == 'admin') {
-                                this.alertMess = '';
-                            }
-                        }
-                        else {
-                            this.alertMess = 'Username or Password INVALID';
-                        }
-                    }
-                    else {
-                        this.alertUser = 'Username is required';
-                        if (this.alertPass == '') {
-                            this.alertPass = 'Password is required';
-                        }
-                    }
-                };
                 loginComponent = __decorate([
                     core_1.Component({
                         selector: 'login',
@@ -58,6 +31,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 return loginComponent;
             }());
             exports_1("loginComponent", loginComponent);
+            { }
         }
     }
 });
