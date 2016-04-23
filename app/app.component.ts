@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import {loginComponent} from './Login/login.component';
-import {loginDetail} from './Login/login-detail';
+import {loginService} from './Login/login.service';
 import {factoryComponent} from '.Factory/factory.component';
 
 @Component({
@@ -10,7 +10,7 @@ import {factoryComponent} from '.Factory/factory.component';
     directives: [ROUTER_DIRECTIVES],
   	providers: [
     ROUTER_PROVIDERS,
-    loginDetail
+    loginService
   ]
 })
 
