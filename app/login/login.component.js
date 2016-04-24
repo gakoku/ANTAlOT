@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,16 +10,20 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, router_1;
     var loginComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             loginComponent = (function () {
-                function loginComponent() {
+                function loginComponent(_router) {
+                    this._router = _router;
                     this.alertMess = '';
                     this.alertUser = '';
                     this.alertPass = '';
@@ -39,6 +43,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         if (this.username == 'admin') {
                             if (this.password == 'admin') {
                                 this.alertMess = '';
+                                //this._router.navigate(['Factory']);
+                                window.location.assign("factory");
                             }
                         }
                         else {
@@ -62,7 +68,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         selector: 'login',
                         templateUrl: 'view/login.html'
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [router_1.Router])
                 ], loginComponent);
                 return loginComponent;
             }());

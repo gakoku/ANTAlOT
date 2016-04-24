@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import { Router } from 'angular2/router';
+import {factoryComponent} from './factory/factory.component';
 
 @Component({
     selector: 'login',
@@ -7,6 +8,9 @@ import { Router } from 'angular2/router';
 })
 
 export class loginComponent{
+	constructor(
+    private _router: Router,
+    ) { }
 	alertMess = '';
 	alertUser = '';
 	alertPass = '';
@@ -24,7 +28,8 @@ export class loginComponent{
 			if(this.username == 'admin'){
 				if(this.password == 'admin'){
 					this.alertMess = '';
-					//this._router.navigate();
+					//this._router.navigate(['Factory']);
+					window.location.assign("factory");
 				}
 			}else{
 				if(this.username != 'admin' && this.username != '' && this.password != 'admin' && this.password != ''){
