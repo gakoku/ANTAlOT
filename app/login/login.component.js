@@ -43,8 +43,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                         if (this.username == 'admin') {
                             if (this.password == 'admin') {
                                 this.alertMess = '';
-                                //this._router.navigate(['Factory']);
-                                window.location.assign("factory");
+                                this._router.navigate(['Factory']);
                             }
                         }
                         else {

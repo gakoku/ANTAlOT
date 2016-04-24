@@ -28,8 +28,7 @@ export class loginComponent{
 			if(this.username == 'admin'){
 				if(this.password == 'admin'){
 					this.alertMess = '';
-					//this._router.navigate(['Factory']);
-					window.location.assign("factory");
+					this._router.navigate(['Factory']);
 				}
 			}else{
 				if(this.username != 'admin' && this.username != '' && this.password != 'admin' && this.password != ''){
