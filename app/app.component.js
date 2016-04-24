@@ -39,7 +39,7 @@ System.register(['angular2/core', 'angular2/router', './login.component'], funct
                             name: 'Login',
                             component: login_component_1.loginComponent,
                             useAsDefault: true
-                        } //,
+                        }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

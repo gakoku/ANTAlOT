@@ -13,10 +13,13 @@ export class loginComponent{
 	username = '';
 	password = '';
 	chkUser(){
+		this.alertMess = '';
 		if(this.username != ''){
 			this.alertUser = '';
 			if(this.password != ''){
 				this.alertPass = '';
+			}else{
+				this.alertPass= 'Password is required'
 			}
 			if(this.username == 'admin'){
 				if(this.password == 'admin'){
@@ -24,7 +27,9 @@ export class loginComponent{
 					//this._router.navigate();
 				}
 			}else{
-				this.alertMess = 'Username or Password INVALID';
+				if(this.username != 'admin' && this.username != '' && this.password != 'admin' && this.password != ''){
+					this.alertMess = 'Username or Password INVALID';
+				}
 			}
 		}else{
 			this.alertUser = 'Username is required';

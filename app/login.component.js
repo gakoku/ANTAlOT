@@ -27,10 +27,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.password = '';
                 }
                 loginComponent.prototype.chkUser = function () {
+                    this.alertMess = '';
                     if (this.username != '') {
                         this.alertUser = '';
                         if (this.password != '') {
                             this.alertPass = '';
+                        }
+                        else {
+                            this.alertPass = 'Password is required';
                         }
                         if (this.username == 'admin') {
                             if (this.password == 'admin') {
@@ -38,7 +42,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             }
                         }
                         else {
-                            this.alertMess = 'Username or Password INVALID';
+                            if (this.username != 'admin' && this.username != '' && this.password != 'admin' && this.password != '') {
+                                this.alertMess = 'Username or Password INVALID';
+                            }
                         }
                     }
                     else {

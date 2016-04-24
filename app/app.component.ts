@@ -15,12 +15,7 @@ import {factoryComponent} from './factory.component';
     name: 'Login',
     component: loginComponent,
     useAsDefault: true
-  }//,
-  //{
-  //  path: '/',
-  //  name: 'factory',
-  //  component: factoryComponent
-  //}
+  }
 ])
 
 export class AppComponent {}
