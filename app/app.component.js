@@ -43,7 +43,7 @@ System.register(['angular2/core', 'angular2/router', './Login/login.component', 
                     router_1.RouteConfig([
                         {
                             path: '/Login',
-                            name: 'login',
+                            name: 'Login',
                             component: login_component_1.loginComponent,
                             useAsDefault: true
                         } //,

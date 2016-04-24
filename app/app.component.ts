@@ -17,13 +17,13 @@ import {factoryComponent} from '.Factory/factory.component';
 @RouteConfig([
   {
     path: '/Login',
-    name: 'login',
+    name: 'Login',
     component: loginComponent,
     useAsDefault: true
   }//,
   //{
   //  path: '/Factory',
-  //  name: 'factory',
+  //  name: 'Factory',
   //  component: factoryComponent
   //}
 ])
