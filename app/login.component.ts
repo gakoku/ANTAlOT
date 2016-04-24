@@ -1,7 +1,12 @@
-import { Injectable } from 'angular2/core';
+import {Component} from 'angular2/core';
+import { Router } from 'angular2/router';
 
-@Injectable()
-export class loginService{
+@Component({
+    selector: 'login',
+    templateUrl: 'view/login.html'
+})
+
+export class loginComponent{
 	alertMess = '';
 	alertUser = '';
 	alertPass = '';
@@ -23,8 +28,10 @@ export class loginService{
 			}
 		}else{
 			this.alertUser = 'Username is required';
-			if(this.alertPass == ''){
+			if(this.password == ''){
 				this.alertPass = 'Password is required';
+			}else{
+				this.alertPass = '';
 			}
 		}
 	}
