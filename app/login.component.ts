@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import { Router } from 'angular2/router';
-import {factoryComponent} from './factory/factory.component';
+import {factoryComponent} from './factory.component';
 
 @Component({
     selector: 'login',
