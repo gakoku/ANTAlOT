@@ -21,10 +21,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             sensorComponent = (function () {
                 function sensorComponent() {
                 }
+                sensorComponent.prototype.goback = function () {
+                    window.history.back();
+                };
                 sensorComponent = __decorate([
                     core_1.Component({
                         selector: 'sensor',
-                        templateUrl: 'view/sensor.html'
+                        template: '<h1>TEST</h1><button (click)="goback()">Back</button>'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], sensorComponent);
