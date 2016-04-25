@@ -24,6 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 factoryComponent = __decorate([
                     core_1.Component({
                         selector: 'factory',
+                        //template: '<h1>TEST</h1>'
                         templateUrl: 'view/factory.html'
                     }), 
                     __metadata('design:paramtypes', [])
