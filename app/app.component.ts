@@ -5,7 +5,7 @@ import {factoryComponent} from './factory.component';
 
 @Component({
     selector: 'index',
-    templateUrl: 'view/index.html',
+    template: '<router-outlet></router-outlet>',
     directives: [ROUTER_DIRECTIVES]
 })
 

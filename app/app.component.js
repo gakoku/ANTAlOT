@@ -33,7 +33,7 @@ System.register(['angular2/core', 'angular2/router', './login.component', './fac
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'index',
-                        templateUrl: 'view/index.html',
+                        template: '<router-outlet></router-outlet>',
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
