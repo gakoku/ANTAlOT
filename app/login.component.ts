@@ -1,6 +1,5 @@
 import {Component} from 'angular2/core';
 import { Router } from 'angular2/router';
-import {factoryComponent} from './factory.component';
 
 @Component({
     selector: 'login',
@@ -9,7 +8,7 @@ import {factoryComponent} from './factory.component';
 
 export class loginComponent{
 	constructor(
-    private _router: Router,
+    private _router: Router
     ) { }
 	alertMess = '';
 	alertUser = '';

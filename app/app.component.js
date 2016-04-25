@@ -43,11 +43,7 @@ System.register(['angular2/core', 'angular2/router', './login.component', './fac
                             component: login_component_1.loginComponent,
                             useAsDefault: true
                         },
-                        {
-                            path: '/factory',
-                            name: 'Factory',
-                            component: factory_component_1.factoryComponent
-                        }
+                        { path: '/factory', name: 'Factory', component: factory_component_1.factoryComponent }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

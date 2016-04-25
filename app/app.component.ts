@@ -16,11 +16,7 @@ import {factoryComponent} from './factory.component';
     component: loginComponent,
     useAsDefault: true
   },
-  {
-  path: '/factory',
-  name: 'Factory',
-  component: factoryComponent
-  }
+  {path: '/factory',name: 'Factory',component: factoryComponent}
 ])
 
 export class AppComponent {}
