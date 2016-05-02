@@ -1,8 +1,7 @@
 import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {loginComponent} from './login.component';
-import {factoryComponent} from './factory.component';
-import {sensorComponent} from './sensor.component';
+import {factoryComponent} from './factory/factory.component';
 
 @Component({
     selector: 'index',
@@ -17,8 +16,7 @@ import {sensorComponent} from './sensor.component';
     component: loginComponent,
     useAsDefault: true
   },
-  {path: '/factory',name: 'Factory',component: factoryComponent},
-  {path: '/sensor',name: 'Sensor',component: sensorComponent}
+  {path: '/factory/...',name: 'Factory',component: factoryComponent}
 ])
 
 export class AppComponent {}
