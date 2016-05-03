@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
 import {sensorComponent} from '../sensor/sensor.component';
 import {factoryListComponent} from './factory-list';
 
@@ -8,10 +8,10 @@ import {factoryListComponent} from './factory-list';
     `
       <div>
         <div id="header">
-    				<table id="comhead">
+    				<table class="uk-width-1-1">
     					<td align='center' style='width:25%;'>
-    						<div id="factorylogo">
-    								<img class="uk-margin-bottom" width="60%" height="60%" src="images/factory.gif" alt="FACLOGO">
+    						<div>
+    								<img class="uk-margin-bottom" width="100px" height="100px" src="images/logo.png" alt="FACLOGO">
     							</div>
     					</td>
     					<td style='width:50%;'>
@@ -19,7 +19,7 @@ import {factoryListComponent} from './factory-list';
     						</div>
     					</td>
     					<td style='width:25%;'>
-    						<div id="userprofile" >
+    						<div>
     							<div align='center'>
     								<pre>Welcome, NAME <a href="#">logout</a></pre>
     							</div>
@@ -43,4 +43,8 @@ import {factoryListComponent} from './factory-list';
   {path: '/sensor',name: 'Sensor',component: sensorComponent}
 ])
 
-export class factoryComponent{}
+export class factoryComponent{
+  constructor(
+    private _router: Router
+  ) {}
+}

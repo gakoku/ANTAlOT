@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import { Router } from 'angular2/router';
 
 @Component({
     template: `
@@ -17,7 +18,7 @@ import {Component} from 'angular2/core';
 				<tr>
 					<td class='uk-width-8-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
-								Factory 1
+								<a (click)="goToSensor()">Factory 1</a>
 						</p>
 					</td>
 					<td class='uk-width-2-10 uk-text-middle uk-text-center'>
@@ -73,4 +74,10 @@ import {Component} from 'angular2/core';
 })
 
 export class factoryListComponent{
+  constructor(
+  private _router: Router
+  ) { }
+  goToSensor(){
+    this._router.navigate(['Sensor']);
+  }
 }

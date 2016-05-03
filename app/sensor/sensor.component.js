@@ -26,7 +26,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 };
                 sensorComponent = __decorate([
                     core_1.Component({
-                        template: "<h1>TEST</h1><button (click)=\"goback()\">Back</button>"
+                        template: "\n    <h1>TEST</h1><button (click)=\"goback()\">Back</button>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], sensorComponent);
