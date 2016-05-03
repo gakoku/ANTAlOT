@@ -21,7 +21,7 @@ import {factoryListComponent} from './factory-list';
     					<td style='width:25%;'>
     						<div>
     							<div align='center'>
-    								<pre>Welcome, NAME <a href="#">logout</a></pre>
+    								<pre>Welcome, admin <a href="#">logout</a></pre>
     							</div>
     						</div>
     					</td>

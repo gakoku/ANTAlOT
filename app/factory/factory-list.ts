@@ -77,6 +77,7 @@ export class factoryListComponent{
   constructor(
   private _router: Router
   ) { }
+
   goToSensor(){
     this._router.navigate(['Sensor']);
   }
