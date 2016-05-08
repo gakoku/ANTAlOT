@@ -1,1 +1,1 @@
-{"version":3,"file":"sensor.component.js","sourceRoot":"","sources":["sensor.component.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;YA2FA;gBAAA;gBACA,CAAC;gBA1FD;oBAAC,gBAAS,CAAC;wBACP,QAAQ,EAAE,wiGAqFT;qBACJ,CAAC;;mCAAA;gBAGF,sBAAC;YAAD,CAAC,AADD,IACC;YADD,6CACC,CAAA"}
+{"version":3,"file":"sensor.component.js","sourceRoot":"","sources":["sensor.component.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;YAiGA;gBAAA;gBACA,CAAC;gBAhGD;oBAAC,gBAAS,CAAC;wBACP,QAAQ,EAAE,g2GA2FT;qBACJ,CAAC;;mCAAA;gBAGF,sBAAC;YAAD,CAAC,AADD,IACC;YADD,6CACC,CAAA"}

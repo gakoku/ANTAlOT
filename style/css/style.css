@@ -15,6 +15,12 @@
 	color: red;
 }
 
-table#card tr{
+table#card{
 	border: 1px solid;
+	border-collapse: separate;
+	border-spacing: 0px 25px;
+}
+
+#dashboard img {
+	height: 150px;
 }

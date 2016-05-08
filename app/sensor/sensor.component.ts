@@ -15,7 +15,10 @@ import {Component} from 'angular2/core';
 			</table>
 			<table id='card' class="card uk-table">
 				<tr>
-					<td class='uk-width-8-10 uk-text-middle'>
+          <td align="center" class='uk-width-2-10 uk-text-middle'>
+            <img src="images/Warn Meter.png" alt="warn meter">
+          </td>
+					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
 								<a (click)="goToDetail()">Sensor 1</a>
 						</p>
@@ -32,7 +35,10 @@ import {Component} from 'angular2/core';
 					</td>
 				</tr>
         <tr>
-					<td class='uk-width-8-10 uk-text-middle'>
+          <td align="center" class='uk-width-2-10 uk-text-middle'>
+            <img src="images/Alert Meter.png" alt="alert meter">
+          </td>
+					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
 								<a (click)="goToDetail()">Sensor 2</a>
 						</p>
