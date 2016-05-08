@@ -14,3 +14,7 @@
 .alert{
 	color: red;
 }
+
+table#card tr{
+	border: 1px solid;
+}

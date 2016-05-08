@@ -4,8 +4,7 @@ import {sensorComponent} from '../sensor/sensor.component';
 import {factoryListComponent} from './factory-list';
 
 @Component({
-    template:
-    `
+    template: `
       <div>
         <div id="header">
     				<table class="uk-width-1-1">
