@@ -98,7 +98,7 @@ import { Router } from 'angular2/router';
             </h3>
           <div class="uk-modal-footer uk-text-right">
             <button class="uk-button uk-button-large uk-button-primary " type="button">
-              SAVE
+              EDIT
             </button>
           </div>
           </form>

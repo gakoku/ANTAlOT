@@ -16,7 +16,7 @@ import {Component} from 'angular2/core';
 			<table id='card' class="card uk-table">
 				<tr>
           <td align="center" class='uk-width-2-10 uk-text-middle'>
-            <img src="images/Good Meter.png" alt="good meter">
+            <img src="images/Good meter.png" alt="good meter">
           </td>
 					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
@@ -82,12 +82,31 @@ import {Component} from 'angular2/core';
       <div id="EditBox" class="uk-modal">
         <div class="uk-modal-dialog">
           <a class="uk-modal-close uk-close"></a>
-          <h1>Test</h1>
-          <p>Test Dialog</p>
+          <form class="uk-form">
+            <h3>
+              NAME : <input class='uk-h3' type="text" [(ngModel)]="senName" placeholder="SENSOR NAME">
+            </h3>
+            <h3>
+              IP ADDRESS : <input class='uk-h3' [(ngModel)]="senIp" type="text" placeholder="IP ADDRESS">
+            </h3>
+            <h3>
+              Descriptions :
+              <textarea class='uk-h3' [(ngModel)]="senDesc" cols="25" rows="" placeholder="Descriptions"></textarea>
+            </h3>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-large uk-button-primary " type="button">
+                EDIT
+              </button>
+            </div>
+          </form>
         </div>
     </div>
     `
 })
 
 export class sensorComponent{
+  senName: String = "Temperature Meter";
+  senIp: String = "169.168.1.1"
+  senDesc: String = "Temperature Items";
+
 }
