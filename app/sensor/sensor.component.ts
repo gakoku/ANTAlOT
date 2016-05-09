@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
 
 @Component({
     template: `
@@ -20,7 +21,7 @@ import {Component} from 'angular2/core';
           </td>
 					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
-								<a (click)="goToDetail()">Sensor 1</a>
+								<a (click)="goToDetail()">{{senName}}</a>
 						</p>
 					</td>
 					<td class='uk-width-2-10 uk-text-middle uk-text-center'>
@@ -45,7 +46,7 @@ import {Component} from 'angular2/core';
 					</td>
 					<td class='uk-width-2-10 uk-text-middle uk-text-center'>
 						<div class="uk-button-group">
-    						<button class="uk-button uk-button-large" data-uk-modal='{target:"#EditBox"}'>
+    						<button class="uk-button uk-button-large" data-uk-modal='{target:"#EditBox2"}'>
     							EDIT
     						</button>
     						<button class="uk-button uk-button-large">
@@ -105,8 +106,8 @@ import {Component} from 'angular2/core';
 })
 
 export class sensorComponent{
-  senName: String = "Temperature Meter";
+  senName: String = "Sensor 1";
   senIp: String = "169.168.1.1"
-  senDesc: String = "Temperature Items";
+  senDesc: String = "Temperature Sensor";
 
 }

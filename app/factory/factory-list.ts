@@ -21,7 +21,7 @@ import { Router } from 'angular2/router';
           </td>
 					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
-								<a (click)="goToSensor()">Factory 1</a>
+								<a (click)="goToSensor()">{{factName}}</a>
 						</p>
 					</td>
 					<td class='uk-width-2-10 uk-text-middle uk-text-center'>
