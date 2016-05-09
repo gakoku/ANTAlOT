@@ -31,9 +31,15 @@ System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component
                 function factoryComponent(_router) {
                     this._router = _router;
                 }
+                factoryComponent.prototype.gotoFact = function () {
+                    this._router.navigate(['FactoryList']);
+                };
+                factoryComponent.prototype.gotoSensor = function () {
+                    this._router.navigate(['Sensor']);
+                };
                 factoryComponent = __decorate([
                     core_1.Component({
-                        template: "\n      <div>\n        <div id=\"header\">\n    \t\t\t\t<table class=\"uk-width-1-1\">\n    \t\t\t\t\t<td align='center' style='width:25%;'>\n    \t\t\t\t\t\t<div>\n    \t\t\t\t\t\t\t\t<img class=\"uk-margin-bottom\" width=\"100px\" height=\"100px\" src=\"images/logo.png\" alt=\"FACLOGO\">\n    \t\t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t\t<td style='width:50%;'>\n    \t\t\t\t\t\t<div>\n    \t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t\t<td style='width:25%;'>\n    \t\t\t\t\t\t<div>\n    \t\t\t\t\t\t\t<div align='center'>\n    \t\t\t\t\t\t\t\t<pre>Welcome, admin <a href=\"#\">logout</a></pre>\n    \t\t\t\t\t\t\t</div>\n    \t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t</table>\n    \t\t</div>\n          <router-outlet></router-outlet>\n      </div>\n    ",
+                        template: "\n      <div>\n        <div id=\"header\">\n    \t\t\t\t<table class=\"uk-width-1-1\">\n    \t\t\t\t\t<td align='center' style='width:25%;'>\n    \t\t\t\t\t\t<div>\n    \t\t\t\t\t\t\t\t<img class=\"uk-margin-bottom\" width=\"100px\" height=\"100px\" src=\"images/logo.png\" alt=\"FACLOGO\">\n    \t\t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t\t<td style='width:50%;'>\n    \t\t\t\t\t\t<div align=\"center\">\n                <div data-uk-button-radio>\n                  <a class=\"uk-button\" selected (click)=\"gotoFact()\">Factory</a>\n                  <a class=\"uk-button\" (click)=\"gotoSensor()\">Sensor</a>\n                </div>\n    \t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t\t<td style='width:25%;'>\n    \t\t\t\t\t\t<div>\n    \t\t\t\t\t\t\t<div align='center'>\n    \t\t\t\t\t\t\t\t<pre>Welcome, admin <a href=\"#\">logout</a></pre>\n    \t\t\t\t\t\t\t</div>\n    \t\t\t\t\t\t</div>\n    \t\t\t\t\t</td>\n    \t\t\t\t</table>\n    \t\t</div>\n          <router-outlet></router-outlet>\n      </div>\n    ",
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([

@@ -14,7 +14,11 @@ import {factoryListComponent} from './factory-list';
     							</div>
     					</td>
     					<td style='width:50%;'>
-    						<div>
+    						<div align="center">
+                <div data-uk-button-radio>
+                  <a class="uk-button" selected (click)="gotoFact()">Factory</a>
+                  <a class="uk-button" (click)="gotoSensor()">Sensor</a>
+                </div>
     						</div>
     					</td>
     					<td style='width:25%;'>
@@ -46,4 +50,12 @@ export class factoryComponent{
   constructor(
     private _router: Router
   ) {}
+
+  gotoFact(){
+    this._router.navigate(['FactoryList']);
+  }
+
+  gotoSensor(){
+    this._router.navigate(['Sensor']);
+  }
 }

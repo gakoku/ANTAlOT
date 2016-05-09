@@ -17,7 +17,7 @@ import { Router } from 'angular2/router';
 			<table id='card' class="uk-table" style='border: 1px solid;'>
 				<tr>
           <td align="center" class='uk-width-2-10 uk-text-middle'>
-            <img src="images/Good Meter.png" alt="good meter">
+            <img src="images/alert Meter.png" alt="alert meter">
           </td>
 					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>

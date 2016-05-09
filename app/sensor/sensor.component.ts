@@ -16,7 +16,7 @@ import {Component} from 'angular2/core';
 			<table id='card' class="card uk-table">
 				<tr>
           <td align="center" class='uk-width-2-10 uk-text-middle'>
-            <img src="images/Warn Meter.png" alt="warn meter">
+            <img src="images/Good Meter.png" alt="good meter">
           </td>
 					<td class='uk-width-6-10 uk-text-middle'>
 						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
@@ -61,20 +61,14 @@ import {Component} from 'angular2/core';
           <div class="uk-modal-header">
             <form class="uk-form">
               <h3>
-                NAME : <input type="text" placeholder="FACTORY NAME">
+                NAME : <input type="text" placeholder="SENSOR NAME">
               </h3>
               <h3>
-                ADDRESS : <textarea cols="25" rows="" placeholder="ADDRESS"></textarea>
+                IP ADDRESS : <input type="text" placeholder="IP ADDRESS">
               </h3>
               <h3>
-                MEMBER
-                <button class="uk-button uk-button-mini uk-button-success " type="button">
-                  +
-                </button>
-              </h3>
-              <h3>
-                1 :
-                <input type="text" placeholder="MEMBER NAME">
+                Descriptions :
+                <textarea cols="25" rows="" placeholder="Descriptions"></textarea>
               </h3>
             </form>
           </div>
