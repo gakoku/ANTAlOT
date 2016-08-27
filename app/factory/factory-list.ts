@@ -4,6 +4,7 @@ import { Router } from 'angular2/router';
 @Component({
     template: `
     <div>
+      <!-- HeaderTab -->
       <table class="uk-table">
         <tr>
           <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
@@ -30,7 +31,7 @@ import { Router } from 'angular2/router';
         </tr>
       </table>
     </div>
-
+    <!-- DASHBOARD -->
     <div id="dashboard">
 			<table class="uk-table">
 				<tr>
@@ -42,60 +43,72 @@ import { Router } from 'angular2/router';
 					</td>
 				</tr>
 			</table>
+      <!-- DATA -->
+      <div>
+        <table class='uk-table'>
+          <tr>
+            <td class='uk-width-1-10' style='border: 1px solid;'>
+              T1 Blank
+            <td>
+            <td class='uk-width-2-10' style='border: 1px solid;'>
+              <div class='uk-text-center' style='border: 1px solid;'>
+                FactoryName
+              </div>
+              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+                Graph Data
+              </div>
+            <td>
+            <td class='uk-width-2-10' style='border: 1px solid;'>
+              T3 Data
+            <td>
+            <td class='uk-width-2-10' style='border: 1px solid;'>
+              T4 Data
+            <td>
+            <td class='uk-width-1-10' style='border: 1px solid;'>
+              T5 Blank
+            <td>
+          </tr>
+        </table>
+      </div>
 
-			<table id='card' class="uk-table" style='border: 1px solid;'>
-				<tr>
-          <td align="center" class='uk-width-2-10 uk-text-middle'>
-            <img src="images/alert Meter.png" alt="alert meter">
-          </td>
-					<td class='uk-width-6-10 uk-text-middle'>
-						<p class='uk-text-primary uk-text-bold uk-text-center uk-h1'>
-								<a (click)="goToSensor()">{{factName}}</a>
-						</p>
-					</td>
-					<td class='uk-width-2-10 uk-text-middle uk-text-center'>
-						<div class="uk-button-group">
-    						<button class="uk-button uk-button-large" data-uk-modal='{target:"#EditBox"}'>
-    							EDIT
-    						</button>
-    						<button class="uk-button uk-button-large">
-    							DELETE
-    						</button>
-    					</div>
-					</td>
-				</tr>
-			</table>
-
+      <!-- POPUP BOX -->
+      <!-- AddBox -->
       <div id="AddBox" class="uk-modal">
         <div class="uk-modal-dialog">
           <a class="uk-modal-close uk-close"></a>
           <div class="uk-modal-header">
             <form class="uk-form">
-              <h3>
-                NAME : <input type="text" placeholder="FACTORY NAME">
-              </h3>
-              <h3>
-                ADDRESS : <textarea cols="25" rows="" placeholder="ADDRESS"></textarea>
-              </h3>
-              <h3>
-                MEMBER
-                <button class="uk-button uk-button-mini uk-button-success " type="button">
-                  +
+            <table class='uk-table'>
+              <tr>
+                <td>
+                  <h3>
+                    NAME :
+                  </h3>
+                </td>
+                <td>
+                  <h3>
+                    <input type="text" placeholder="FACTORY NAME">
+                  </h3>
+                </td>
+              </tr>
+                <h3>
+                  ADDRESS : <textarea cols="25" rows="" placeholder="ADDRESS"></textarea>
+                </h3>
+
+                <h3>
+                  DESCRIPTION : <textarea cols="25" rows="" placeholder="DESCRIPTION"></textarea>
+                </h3>
+              <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-large uk-button-primary " type="button">
+                  ADD
                 </button>
-              </h3>
-              <h3>
-                1 :
-                <input type="text" placeholder="MEMBER NAME">
-              </h3>
-            <div class="uk-modal-footer uk-text-right">
-              <button class="uk-button uk-button-large uk-button-primary " type="button">
-                ADD
-              </button>
-            </div>
+              </div>
+            </table>
             </form>
           </div>
         </div>
       </div>
+      <!-- EditBox -->
       <div id="EditBox" class="uk-modal">
         <div class="uk-modal-dialog">
           <a class="uk-modal-close uk-close"></a>
