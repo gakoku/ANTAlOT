@@ -47,10 +47,7 @@ import { Router } from 'angular2/router';
       <div>
         <table class='uk-table'>
           <tr>
-            <td class='uk-width-1-10' style='border: 1px solid;'>
-              T1 Blank
-            <td>
-            <td class='uk-width-2-10' style='border: 1px solid;'>
+            <td class='uk-width-3-10'>
               <div class='uk-text-center' style='border: 1px solid;'>
                 FactoryName
               </div>
@@ -58,14 +55,21 @@ import { Router } from 'angular2/router';
                 Graph Data
               </div>
             <td>
-            <td class='uk-width-2-10' style='border: 1px solid;'>
-              T3 Data
+            <td class='uk-width-3-10'>
+              <div class='uk-text-center' style='border: 1px solid;'>
+                FactoryName
+              </div>
+              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+                Graph Data
+              </div>
             <td>
-            <td class='uk-width-2-10' style='border: 1px solid;'>
-              T4 Data
-            <td>
-            <td class='uk-width-1-10' style='border: 1px solid;'>
-              T5 Blank
+            <td class='uk-width-3-10'>
+              <div class='uk-text-center' style='border: 1px solid;'>
+                FactoryName
+              </div>
+              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+                Graph Data
+              </div>
             <td>
           </tr>
         </table>
@@ -78,32 +82,20 @@ import { Router } from 'angular2/router';
           <a class="uk-modal-close uk-close"></a>
           <div class="uk-modal-header">
             <form class="uk-form">
-            <table class='uk-table'>
-              <tr>
-                <td>
-                  <h3>
-                    NAME :
-                  </h3>
-                </td>
-                <td>
-                  <h3>
-                    <input type="text" placeholder="FACTORY NAME">
-                  </h3>
-                </td>
-              </tr>
-                <h3>
-                  ADDRESS : <textarea cols="25" rows="" placeholder="ADDRESS"></textarea>
-                </h3>
-
-                <h3>
-                  DESCRIPTION : <textarea cols="25" rows="" placeholder="DESCRIPTION"></textarea>
-                </h3>
-              <div class="uk-modal-footer uk-text-right">
-                <button class="uk-button uk-button-large uk-button-primary " type="button">
-                  ADD
-                </button>
-              </div>
-            </table>
+              <h3>
+                NAME : <input type="text" placeholder="FACTORY NAME">
+              </h3>
+              <h3>
+                ADDRESS : <textarea cols="25" rows="" placeholder="ADDRESS"></textarea>
+              </h3>
+              <h3>
+                DESCRIPTION : <textarea cols="25" rows="" placeholder="DESCRIPTION"></textarea>
+              </h3>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-large uk-button-primary " type="button">
+                ADD
+              </button>
+            </div>
             </form>
           </div>
         </div>
