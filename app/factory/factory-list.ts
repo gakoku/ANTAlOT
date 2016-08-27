@@ -3,6 +3,34 @@ import { Router } from 'angular2/router';
 
 @Component({
     template: `
+    <div>
+      <table class="uk-table">
+        <tr>
+          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
+            <a>
+              <div  class='uk-width-1-1'>
+                <h2 class='uk-text-middle'>FACTORY</h2>
+              </div>
+            </a>
+          </td>
+          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
+            <a class='uk-width-1-3  uk-text-middle'>
+              <div>
+                <h2>MACHINE</h2>
+              </div>
+            </a>
+          </td>
+          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
+            <a class='uk-width-1-3 uk-text-middle'>
+              <div>
+                <h2>ANT</h2>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
     <div id="dashboard">
 			<table class="uk-table">
 				<tr>
@@ -14,6 +42,7 @@ import { Router } from 'angular2/router';
 					</td>
 				</tr>
 			</table>
+
 			<table id='card' class="uk-table" style='border: 1px solid;'>
 				<tr>
           <td align="center" class='uk-width-2-10 uk-text-middle'>
@@ -36,6 +65,7 @@ import { Router } from 'angular2/router';
 					</td>
 				</tr>
 			</table>
+
       <div id="AddBox" class="uk-modal">
         <div class="uk-modal-dialog">
           <a class="uk-modal-close uk-close"></a>

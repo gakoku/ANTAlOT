@@ -16,8 +16,8 @@ import {factoryListComponent} from './factory-list';
     					<td style='width:50%;'>
     						<div align="center">
                 <div data-uk-button-radio>
-                  <a class="uk-button" selected (click)="gotoFact()">Factory</a>
-                  <a class="uk-button" (click)="gotoSensor()">Sensor</a>
+                  <input type="search" placeholder='Search'>
+                  <button class="uk-button">Search</button>
                 </div>
     						</div>
     					</td>
