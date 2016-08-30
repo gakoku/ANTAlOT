@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component', './factory-list'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component', './factory-list', '../machine/machine.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, sensor_component_1, factory_list_1;
+    var core_1, router_1, sensor_component_1, factory_list_1, machine_component_1;
     var factoryComponent;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component
             },
             function (factory_list_1_1) {
                 factory_list_1 = factory_list_1_1;
+            },
+            function (machine_component_1_1) {
+                machine_component_1 = machine_component_1_1;
             }],
         execute: function() {
             factoryComponent = (function () {
@@ -49,7 +52,8 @@ System.register(['angular2/core', 'angular2/router', '../sensor/sensor.component
                             component: factory_list_1.factoryListComponent,
                             useAsDefault: true
                         },
-                        { path: '/sensor', name: 'Sensor', component: sensor_component_1.sensorComponent }
+                        { path: '/sensor', name: 'Sensor', component: sensor_component_1.sensorComponent },
+                        { path: '/machine', name: 'Machine', component: machine_component_1.machineComponent }
                     ]), 
                     __metadata('design:paramtypes', [router_1.Router])
                 ], factoryComponent);

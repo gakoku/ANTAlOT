@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
 import {sensorComponent} from '../sensor/sensor.component';
 import {factoryListComponent} from './factory-list';
+import {machineComponent} from '../machine/machine.component';
 
 @Component({
     template: `
@@ -43,7 +44,8 @@ import {factoryListComponent} from './factory-list';
   component: factoryListComponent,
   useAsDefault: true
   },
-  {path: '/sensor',name: 'Sensor',component: sensorComponent}
+  {path: '/sensor',name: 'Sensor',component: sensorComponent},
+  {path: '/machine',name: 'Machine',component: machineComponent}
 ])
 
 export class factoryComponent{

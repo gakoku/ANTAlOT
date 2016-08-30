@@ -7,26 +7,20 @@ import { Router } from 'angular2/router';
       <!-- HeaderTab -->
       <table class="uk-table">
         <tr>
-          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
-            <a>
-              <div  class='uk-width-1-1'>
-                <h2 class='uk-text-middle'>FACTORY</h2>
-              </div>
-            </a>
+          <td class='uk-width-1-3 uk-text-center uk-panel-box-primary'>
+            <div  class='uk-width-1-1'>
+              <h2 class='uk-text-middle'>FACTORY</h2>
+            </div>
           </td>
-          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
-            <a class='uk-width-1-3  uk-text-middle'>
-              <div>
-                <h2>MACHINE</h2>
-              </div>
-            </a>
+          <td class='uk-width-1-3 uk-text-center uk-panel-box'>
+            <div>
+              <h2>MACHINE</h2>
+            </div>
           </td>
-          <td class='uk-width-1-3 uk-text-center' style='border: 1px solid;'>
-            <a class='uk-width-1-3 uk-text-middle'>
-              <div>
-                <h2>ANT</h2>
-              </div>
-            </a>
+          <td class='uk-width-1-3 uk-text-center uk-panel-box-secondary'>
+            <div>
+              <h2>ANT</h2>
+            </div>
           </td>
         </tr>
       </table>
@@ -48,10 +42,17 @@ import { Router } from 'angular2/router';
         <table class='uk-table'>
           <tr>
             <td class='uk-width-3-10'>
-              <div class='uk-text-center' style='border: 1px solid;'>
-                FactoryName
+              <div class='uk-text-center uk-panel uk-panel-box'>
+                <a (click)='goToMachine()'>
+                  FactoryName
+                </a>
+                <a>
+                  <div class='uk-panel-badge uk-badge'>
+                    X
+                  </div>
+                </a>
               </div>
-              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+              <div class='uk-text-middle uk-text-center uk-panel uk-panel-box uk-panel-box-secondary'>
                 Graph Data
               </div>
             <td>
@@ -152,7 +153,7 @@ export class factoryListComponent{
   member1: String = "John Smith";
   member2: String = "Adam Potter";
 
-  goToSensor(){
-    this._router.navigate(['Sensor']);
+  goToMachine(){
+    this._router.navigate(['Machine']);
   }
 }
