@@ -55,23 +55,37 @@ import { Router } from 'angular2/router';
               <div class='uk-text-middle uk-text-center uk-panel uk-panel-box uk-panel-box-secondary'>
                 Graph Data
               </div>
-            <td>
+            </td>
             <td class='uk-width-3-10'>
-              <div class='uk-text-center' style='border: 1px solid;'>
-                FactoryName
+              <div class='uk-text-center uk-panel uk-panel-box'>
+                <a (click)='goToMachine()'>
+                  FactoryName
+                </a>
+                <a>
+                  <div class='uk-panel-badge uk-badge'>
+                    X
+                  </div>
+                </a>
               </div>
-              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+              <div class='uk-text-middle uk-text-center uk-panel uk-panel-box uk-panel-box-secondary'>
                 Graph Data
               </div>
-            <td>
+            </td>
             <td class='uk-width-3-10'>
-              <div class='uk-text-center' style='border: 1px solid;'>
-                FactoryName
+              <div class='uk-text-center uk-panel uk-panel-box'>
+                <a (click)='goToMachine()'>
+                  FactoryName
+                </a>
+                <a>
+                  <div class='uk-panel-badge uk-badge'>
+                    X
+                  </div>
+                </a>
               </div>
-              <div class='uk-text-middle uk-text-center' style='border: 1px solid;'>
+              <div class='uk-text-middle uk-text-center uk-panel uk-panel-box uk-panel-box-secondary'>
                 Graph Data
               </div>
-            <td>
+            </td>
           </tr>
         </table>
       </div>
